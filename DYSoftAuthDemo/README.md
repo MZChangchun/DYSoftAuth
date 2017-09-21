@@ -22,6 +22,7 @@
 # <a id="Examples"></a> Examples【示例】
 
 1.在`AppDelegate.m`中导入头文件`#import "DYSoftAuth.h"`
+
 2.在`didFinishLaunchingWithOptions`方法中初始化
 ```
 /**
