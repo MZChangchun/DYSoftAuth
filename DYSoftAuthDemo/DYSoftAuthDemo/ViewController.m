@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *uniqueidLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 @property (weak, nonatomic) IBOutlet UIButton *logoutButton;
+@property (weak, nonatomic) IBOutlet UILabel *expiresLabel;
+@property (weak, nonatomic) IBOutlet UILabel *accessTokenLabel;
 
 @end
 
@@ -69,6 +71,8 @@
             self.accountLabel.text = user.account;
             self.uniqueidLabel.text = user.uniqueid;
             self.emailLabel.text = user.email;
+            self.accessTokenLabel.text = user.access_token;
+            self.expiresLabel.text = [NSString stringWithFormat:@"%.2f",user.expires_in];
             self.logoutButton.alpha = 1;
         });
     } else {
@@ -83,6 +87,8 @@
     self.accountLabel.text = @" ";
     self.uniqueidLabel.text = @" ";
     self.emailLabel.text = @" ";
+    self.accessTokenLabel.text = @" ";
+    self.expiresLabel.text = @" ";
     [[DYSoftAuth sharedAuth] logout];
     self.logoutButton.alpha = 0;
 }

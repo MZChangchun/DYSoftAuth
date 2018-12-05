@@ -19,8 +19,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[DYSoftAuth sharedAuth] initWithAuthHost:@"http://61.174.50.37:9083/core"
-                                   authWebUrl:@"http://61.174.50.37:9081"
-                                     fileHost:@"http://192.168.1.27:60001"
                                         scope:@"openid profile"
                                      clientID:@"webViewTest"
                                  clientSecret:@"webViewTestKey"];

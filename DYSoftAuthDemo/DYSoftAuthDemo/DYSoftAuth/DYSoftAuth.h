@@ -39,6 +39,16 @@
 @property (nonatomic, copy)NSString * headImage;
 
 /**
+ 用户的access_token
+ */
+@property (nonatomic, copy)NSString * access_token;
+
+/**
+ access_token的过期时间
+ */
+@property (nonatomic, assign)CGFloat expires_in;
+
+/**
  所有的属性
  */
 @property (nonatomic, strong)NSDictionary * extendAttributeDictionary;
@@ -68,15 +78,11 @@
  初始化操作
 
  @param authHost 认证中心的地址
- @param authWebUrl 开放平台的地址
- @param fileHost 文件中心的地址
  @param scope 授权范围 多个类型空格隔开
  @param clientID app的ID（分配的）
  @param clientSecret appkey(分配的)
  */
 - (void)initWithAuthHost:(NSString *)authHost
-              authWebUrl:(NSString *)authWebUrl
-                fileHost:(NSString *)fileHost
                    scope:(NSString *)scope
                 clientID:(NSString *)clientID
             clientSecret:(NSString *)clientSecret;

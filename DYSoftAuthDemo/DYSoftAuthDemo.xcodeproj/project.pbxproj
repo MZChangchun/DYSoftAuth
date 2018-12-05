@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FB4BB741F727CB500EC050B /* DYSoftAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB4BB731F727C9F00EC050B /* DYSoftAuth.a */; };
+		2F6EDD3F2060A042004BA654 /* libDYSoftAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6EDD3E2060A041004BA654 /* libDYSoftAuth.a */; };
 		2FCF20601F72660600C32BDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF205F1F72660600C32BDA /* AppDelegate.m */; };
 		2FCF20661F72660600C32BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCF20641F72660600C32BDA /* Main.storyboard */; };
 		2FCF20681F72660600C32BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCF20671F72660600C32BDA /* Assets.xcassets */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2FB4BB731F727C9F00EC050B /* DYSoftAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = DYSoftAuth.a; sourceTree = "<group>"; };
-		2FB4BB751F727CEB00EC050B /* DYSoftAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSoftAuth.h; sourceTree = "<group>"; };
+		2F6EDD3E2060A041004BA654 /* libDYSoftAuth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDYSoftAuth.a; sourceTree = "<group>"; };
+		2F6EDD402060A060004BA654 /* DYSoftAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYSoftAuth.h; sourceTree = "<group>"; };
 		2FCF205B1F72660600C32BDA /* DYSoftAuthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYSoftAuthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCF205E1F72660600C32BDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FCF205F1F72660600C32BDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,13 +36,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB4BB741F727CB500EC050B /* DYSoftAuth.a in Frameworks */,
+				2F6EDD3F2060A042004BA654 /* libDYSoftAuth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F7B84152047A7F8007DA6FE /* DYSoftAuth */ = {
+			isa = PBXGroup;
+			children = (
+				2F6EDD402060A060004BA654 /* DYSoftAuth.h */,
+				2F6EDD3E2060A041004BA654 /* libDYSoftAuth.a */,
+			);
+			path = DYSoftAuth;
+			sourceTree = "<group>";
+		};
 		2FB4BB6F1F72675200EC050B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +79,7 @@
 		2FCF205D1F72660600C32BDA /* DYSoftAuthDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2FCF20741F72661C00C32BDA /* DYSoftAuth */,
+				2F7B84152047A7F8007DA6FE /* DYSoftAuth */,
 				2FCF205E1F72660600C32BDA /* AppDelegate.h */,
 				2FCF205F1F72660600C32BDA /* AppDelegate.m */,
 				2FCF20771F7266CA00C32BDA /* ViewController.h */,
@@ -82,15 +91,6 @@
 				2FCF206D1F72660600C32BDA /* main.m */,
 			);
 			path = DYSoftAuthDemo;
-			sourceTree = "<group>";
-		};
-		2FCF20741F72661C00C32BDA /* DYSoftAuth */ = {
-			isa = PBXGroup;
-			children = (
-				2FB4BB751F727CEB00EC050B /* DYSoftAuth.h */,
-				2FB4BB731F727C9F00EC050B /* DYSoftAuth.a */,
-			);
-			path = DYSoftAuth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

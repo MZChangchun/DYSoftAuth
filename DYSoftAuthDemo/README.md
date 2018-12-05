@@ -1,6 +1,6 @@
 # DYSoftAuth
 
-# 杭州鼎永科技有限公司统一身份认证 iOS SDK
+#杭州鼎永科技有限公司统一身份认证 iOS SDK
 
 ## <a id="Installation"></a> Installation【安装】
 
@@ -22,22 +22,17 @@
 # <a id="Examples"></a> Examples【示例】
 
 1.在`AppDelegate.m`中导入头文件`#import "DYSoftAuth.h"`
-
 2.在`didFinishLaunchingWithOptions`方法中初始化
 ```
 /**
  初始化操作
 
  @param authHost 认证中心的地址
- @param authWebUrl 开放平台的地址
- @param fileHost 文件中心的地址
  @param scope 授权范围 多个类型空格隔开
  @param clientID app的ID（分配的）
  @param clientSecret appkey(分配的)
  */
 [[DYSoftAuth sharedAuth] initWithAuthHost:@"http://AuthHost" //认证中心的地址
-                                   authWebUrl:@"http://WebUrl" //开放平台的地址
-                                     fileHost:@"http://Host1" //文件中心的地址
                                         scope:@"openid profile" //授权范围 多个类型空格隔开
                                      clientID:@"clientID" //app的ID（分配的）
                                  clientSecret:@"clientSecret"]; //appkey(分配的)
@@ -55,4 +50,4 @@
     }];
 ```
 
-# 注意 回调函数改变UI请在主线程中执行. block请注意避免循环引用
+#注意 回调函数改变UI请在主线程中执行. block请注意避免循环引用
